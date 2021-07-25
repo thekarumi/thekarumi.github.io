@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{   float n;
+
+    printf("nhap");
+    scanf("%f",&n);
+    if (n==int(n))
+    {
+        if (int(n) % 2==0)
+        {
+        printf("chan");
+    
+        }
+        else
+        {
+        printf("le");
+        }
+    }
+    else 
+    {
+        printf("ko chap nhan");
+    }

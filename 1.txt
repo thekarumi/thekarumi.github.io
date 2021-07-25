@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int doixung(char *st);
+void main()
+{
+ 
+   char chuoi[100];
+   printf("\nInput: ");
+   gets(chuoi);
+    if(doixung(chuoi)==0)
+   printf("\nNo");
+   else printf("\nYes");
+   getch();
+ 
+}
+int doixung(char *st)
+{
+    int i,j;
+   for(i=0,j=strlen(st)-1;i<strlen(st)/2;j--,i++)
+    if(st[i]!=st[j])
+      return 0;
+      return 1;
+}
